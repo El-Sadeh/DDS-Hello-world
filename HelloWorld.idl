@@ -1,0 +1,3 @@
+struct TemperatureStruct{
+	short temp;
+};
