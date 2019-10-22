@@ -69,7 +69,7 @@ class TemperatureStructReaderListener : public dds::sub::NoOpDataReaderListener<
 
             if (sample_it->info().valid()){
                 count_++;
-                std::cout <<"Temperature is: "<< sample_it->data().temp()<<" degrees celcius" << std::endl; 
+                std::cout <<"Temperature is: "<< sample_it->data().temp()<<" degrees celsius" << std::endl; 
             }        
         }      
     }
