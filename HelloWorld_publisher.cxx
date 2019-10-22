@@ -64,7 +64,7 @@ void publisher_main(int domain_id, int sample_count)
 	std::default_random_engine generator;
 	std::uniform_int_distribution<int> distribution(0, 100);
 	int randomTemperature;
-
+	
     TemperatureStruct sample;
     for (int count = 0; count < sample_count || sample_count == 0; count++) {
         // Modify the data to be written here

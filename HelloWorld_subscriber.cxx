@@ -92,7 +92,7 @@ void subscriber_main(int domain_id, int sample_count)
     dds::topic::Topic<TemperatureStruct> topic(participant, "Example TemperatureStruct");
 
     // Create a DataReader with default Qos (Subscriber created in-line)
-    TemperatureStructReaderListener listener;
+	TemperatureStructReaderListener listener;;
     dds::sub::DataReader<TemperatureStruct> reader(
         dds::sub::Subscriber(participant),
         topic,
