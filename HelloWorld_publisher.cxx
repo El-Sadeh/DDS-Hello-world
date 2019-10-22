@@ -63,7 +63,7 @@ void publisher_main(int domain_id, int sample_count)
 
 	//Great for using this.
 	std::default_random_engine generator;
-	//GS - note that you don't really need the "<int>" template, "<>" will be enough.
+	//GS - note that you don't really need the "<int>" template, "<>" will be enough
 	//See example - https://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution.
 	std::uniform_int_distribution<int> distribution(0, 100);
 	int randomTemperature;
@@ -71,7 +71,7 @@ void publisher_main(int domain_id, int sample_count)
     TemperatureStruct sample;
     for (int count = 0; count < sample_count || sample_count == 0; count++) {
         // Modify the data to be written here
-    	// GS - you can assign the value directly to the temp member within the sample.
+    	// GS - you can assign the value directly to the temp member within the sample
 		randomTemperature = (short)distribution(generator);  // generates number in the range 0...100
 		sample.temp(randomTemperature);
 		std::cout << "Writing TemperatureStruct, count " << count << std::endl;
